@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Diwahar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #555;
+            border-radius: 5px;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            display: none; /* Hide all sections by default */
+        }
+
+        #software-developer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f0f0f0;
+            flex: 1;
+        }
+
+        #software-developer h2 {
+            font-size: 3em;
+            color: #333;
+        }
+
+        /* Profile Image Styles */
+        #profile-image {
+            position: fixed;
+            top: 50%;
+            left: 70px;
+            transform: translateY(-50%);
+            width: 320px;
+            height: 320px;
+            border-radius: 10%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .content {
+            position: absolute;
+            left: 500px;
+            width: 100vh;
+            padding-top: 60px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Software Developer Section -->
+    <section id="software-developer">
+        <h2>Software Developer</h2>
+    </section>
+
+    <img id="profile-image" src="image/profile.jpeg" alt="Diwahar M" />
+
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#internship">Internship</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="profile">
+        <div class="content">
+            <h1>Diwahar M</h1><br><br>
+            <p>Frontend Developer with a strong foundation in Core Java, HTML, CSS, JavaScript, and the Spring Framework.
+                 A recent graduate passionate about building responsive, user-centric web applications.
+                  Demonstrates the ability to apply academic knowledge to real-world projects and deliver clean, efficient code.
+                   Eager to contribute to innovative projects and collaborate with cross-functional teams to achieve optimal results. 
+                   Equipped with a drive to continuously learn and adapt in a fast-paced, evolving tech landscape.</p>
+        </div>
+    </section>
+
+    <section id="internship">
+        <div class="content">
+            <h1>Internship</h1><br><br>
+            <p>
+                <strong>Company:</strong> Xyloine Corporate Office, Coimbatore<br><br>
+                <strong>Duration:</strong> June 2023 – August 2023<br><br>
+                <strong>Key Contributions:</strong><br><br>
+            </p>
+            <ul>
+                <li>Developed RESTful APIs using Spring Boot to enable seamless communication between frontend and backend systems.</li><br>
+                <li>Designed and optimized database schemas, implemented efficient queries, and maintained data integrity.</li><br>
+                <li>Created unit tests, debugged issues, and optimized application performance to enhance reliability and scalability.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="content">
+            <h1>Projects</h1><br><br>
+            <p>
+                <strong>Design of Four-Port Flexible UWB-MIMO Antenna with High :</strong><br><br> <li>  Developed a flexible four-port UWB-MIMO antenna system designed for good isolation and capable of operating from 2.9 GHz to 10.86 GHz</li><br>
+                <li>Operating bands include 5G, wearables, WiFi, and more, making it versatile for various communication applications.</li><br>
+                <strong>Demand Forecastingfor a Multi-Channel Retail Company Using Machine Learning:</strong> <br><br><li>Utilise Python, Pandas, NumPy, and Google Colab to preprocess data and implement a recurrent neural network (RNN) for demand forecasting.</li><br>
+                <li>Evaluate model performance using metrics like MAE and MSE, then deploy the trained model for real-time demand forecasting to optimise inventory management.</li>
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="content">
+            <h1>Skills</h1><br><br>
+            <p>
+                <strong>Programming:</strong> Java, J2EE, HTML, CSS, JavaScript<br><br>
+                <strong>Frameworks:</strong> Spring, Hibernate, JSP/JSF, <br><br>
+                <strong>Database:</strong> SQL, JDBC <br><br>
+                <strong>Operating System: </strong>Ubuntu, windows <br><br>
+                <strong>Software Skills: </strong>Canva, Visual Studio Code, GitHub
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="content">
+            <h1>Education</h1><br><br>
+            <p>
+                <strong>B.E. - Electronics and Communication Engineering:</strong><br><br>
+                <strong>CGPA:</strong> 9.0<br><br>
+                <strong>College:</strong>Coimbatore Institute of Engineering and Technology <br><br><br>
+                
+                <strong>12th Standard:</strong><br><br>
+                <strong>School:</strong> G.G.S.M.M. Higher Secondary School, Mayiladuthurai<br><br>
+                <strong>Percentage:</strong> 79.5%<br><br><br>
+                
+                <strong>10th Standard:</strong><br><br>
+                <strong>School:</strong> G.G.S.M.M. Higher Secondary School, Mayiladuthurai<br><br>
+                <strong>Percentage:</strong> 94.8%
+            </p>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="content">
+            <h1>Contact</h1><br><br>
+            <p>
+                <strong>Email: </strong>diwahar9417@gmail.com<br><br><br>
+                <strong>Mobile:</strong> +91 7358812164<br><br><br>
+                <Address><strong>Address:</strong> 8/5 Vathukara Street, Mayiladuthurai</Address><br><br>
+                <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/diwaharm9417" target="_blank">linkedin.com/in/diwaharm9417</a><br><br><br>
+                <strong>GitHub: </strong><a href="https://github.com/Diwahar9417" target="_blank">github.com/Diwahar9417</a><br><br><br>
+                <p>
+                    <strong>Check Resume:</strong> 
+                    <a href="files/resume.pdf" download target="_blank" style="text-decoration: none; color: white; background-color: #333; padding: 10px 20px; border-radius: 5px;">Download Resume</a>
+                </p>
+                
+
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Diwahar M. All Rights Reserved.
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+
+                // Hide all sections
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'none';
+                });
+
+                // Show the targeted section
+                const target = document.querySelector(link.getAttribute('href'));
+                target.style.display = 'flex';
+
+                // Scroll into view (optional smooth scrolling)
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Initially show the "Software Developer" section and profile image
+        document.getElementById('software-developer').style.display = 'flex';
+        document.getElementById('profile-image').style.display = 'block';
+    </script>
+</body>
+</html>
